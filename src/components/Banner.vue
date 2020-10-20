@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen h-auto flex flex-col pt-16 px-4 py-10" id="Banner">
+  <div class="min-h-screen h-auto flex flex-col pt-20 px-4 pb-20" id="banner">
     <div class="">
-      <img src="@/assets/hero.png" class="w-full mx-auto" alt="" />
+      <img src="@/assets/hero.png" class="w-4/5 mx-auto" alt="" />
     </div>
     <div class="flex-1 text-center text-white mt-16">
       <h1 class=" text-4xl font-light">

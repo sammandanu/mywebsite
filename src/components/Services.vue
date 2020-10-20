@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-10 bg-dark-gray">
+  <div class="px-4 pb-20 bg-dark-gray pt-20" id="services">
     <h2 class="text-2xl text-center  text-white mb-10">
       <span class="pb-1 border-b border-orange">Services</span>
     </h2>
@@ -51,7 +51,7 @@
         <div class="mb-6">
           <img src="@/assets/full_icon.png" class="mx-auto h-8" alt="" />
         </div>
-        <h3 class="font-semibold text-2xl mb-6">Full Stack Development)</h3>
+        <h3 class="font-semibold text-2xl mb-6">Full Stack Development</h3>
         <p class="text-sm">
           Develop both client and server software. In addition to mastering HTML
           and CSS, I also knows how to Program a browser with Vue and Program a

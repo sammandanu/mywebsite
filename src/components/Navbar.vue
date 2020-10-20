@@ -1,8 +1,11 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0  ease-in-out mx-auto p-4">
+  <nav class="fixed top-0 left-0 right-0 bg-dark-blue ease-in-out mx-auto p-4">
     <div class="flex items-center justify-between">
-      <div class="flex-1">
-        <img src="@/assets/logo.png" class="h-10" alt="" />
+      <div class="flex-1 flex items-center ">
+        <img src="@/assets/logo.png" class="h-10 mr-2" alt="" />
+        <div class="flex-1 text-center text-orange font-semibold">
+          SAMMTHING
+        </div>
       </div>
       <img src="@/assets/hamburger.png" alt="" @click="toggle = !toggle" />
       <div
@@ -16,31 +19,34 @@
         <div class="text-center text-white p-10 flex flex-col">
           <div class="font-bold text-4xl mb-4" @click="toggle = !toggle">X</div>
 
-          <ul class="flex flex-1 flex-col justify-between ">
+          <ul
+            class="flex flex-1 flex-col justify-between "
+            @click="toggle = false"
+          >
             <li class="py-10">
-              <router-link to="#Home">
+              <a href="#banner">
                 <span class="font-normal text-4xl ">Home</span>
-              </router-link>
+              </a>
             </li>
             <li class="mb-10">
-              <router-link to="#Home">
+              <a href="#services">
                 <span class="font-normal text-4xl ">Services</span>
-              </router-link>
+              </a>
             </li>
             <li class="mb-10">
-              <router-link to="#Home">
+              <a href="#about">
                 <span class="font-normal text-4xl ">About</span>
-              </router-link>
+              </a>
             </li>
             <li class="mb-10">
-              <router-link to="#Home">
+              <a href="#portofolio">
                 <span class="font-normal text-4xl">Portofolio</span>
-              </router-link>
+              </a>
             </li>
             <li class="">
-              <router-link to="#Home">
+              <a href="#engage">
                 <span class="font-normal text-4xl ">Contact</span>
-              </router-link>
+              </a>
             </li>
           </ul>
         </div>

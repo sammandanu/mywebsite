@@ -3,6 +3,10 @@
     <Navbar />
     <Banner />
     <Services />
+    <About />
+    <Portofolio />
+    <Engage />
+    <Footer />
   </div>
 </template>
 
@@ -11,6 +15,10 @@
 import Navbar from "@/components/Navbar.vue";
 import Banner from "@/components/Banner.vue";
 import Services from "@/components/Services.vue";
+import About from "@/components/About.vue";
+import Portofolio from "@/components/Portofolio.vue";
+import Engage from "@/components/Engage.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
@@ -18,6 +26,10 @@ export default {
     Navbar,
     Banner,
     Services,
+    About,
+    Portofolio,
+    Engage,
+    Footer,
   },
 };
 </script>
