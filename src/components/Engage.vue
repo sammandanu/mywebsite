@@ -10,7 +10,7 @@
           >
         </h2>
         <p class="mb-4 md:text-left">
-          Turn your idea into awesome product, just give me a shot and i will
+          Turn your idea into awesome website, just give me a shot and i will
           never let you down
         </p>
       </div>
