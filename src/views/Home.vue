@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-screen-xl">
+  <div class="">
     <Navbar />
     <Banner />
     <Services />
@@ -29,7 +29,7 @@ export default {
     About,
     Portofolio,
     Engage,
-    Footer,
-  },
+    Footer
+  }
 };
 </script>

@@ -12,6 +12,7 @@ module.exports = {
       gray: "#CCC",
       "md-gray": "#424657",
       "dark-gray": "#333646",
+      tp: "transparent",
     },
   },
   variants: {},
