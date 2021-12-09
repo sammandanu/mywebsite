@@ -15,7 +15,7 @@
       </h1>
       <h2 class="mb-2 md:text-xl">Muhammad Samman Almadanu</h2>
       <p class="text-gray text-sm md:text-xl">
-        Freelance Web & Mobile UI/UX Designer and Developer
+        Freelance Web & Mobile UI/UX Designer and Developer.
       </p>
       <div class="flex justify-center md:justify-start items-center mt-10">
         <a
@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "Banner"
+  name: "Banner",
 };
 </script>
 
