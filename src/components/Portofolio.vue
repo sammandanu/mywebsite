@@ -67,14 +67,14 @@ export default {
       type: "all",
       portofolio: [
         {
-          img: require("@/assets/portofolio/ig3.png"),
-          link: null,
-          type: "design",
-        },
-        {
           img: require("@/assets/portofolio/semesta.png"),
           link: "https://yogyasemesta.com/",
           type: "website",
+        },
+        {
+          img: require("@/assets/portofolio/ig3.png"),
+          link: null,
+          type: "design",
         },
         {
           img: require("@/assets/portofolio/jelajah.png"),
