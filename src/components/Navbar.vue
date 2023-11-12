@@ -1,21 +1,26 @@
 <template>
   <nav
-    class="fixed top-0 left-0 right-0 bg-dark-blue ease-in-out mx-auto p-4 z-30 "
+    class="fixed top-0 left-0 right-0  ease-in-out mx-auto p-4 z-30 bg-dark-blue"
   >
     <div class="flex items-center justify-between max-w-screen-xl mx-auto">
-      <div class="flex-1 flex items-center ">
+      <router-link
+        to="/#banner"
+        class="flex-1 flex items-center cursor-pointer"
+      >
         <img src="@/assets/logo.png" class="h-10 mr-2" alt="" />
         <div class="flex-1 text-center md:text-left text-orange font-semibold">
-          SAMMTHING
+          SAMMTHING <span v-if="palestine">- Free Free Palestine</span>
         </div>
-      </div>
+      </router-link>
       <img
         src="@/assets/hamburger.png"
         alt=""
         @click="toggle = !toggle"
         class="md:hidden"
+        v-if="!palestine"
       />
       <div
+        v-if="!palestine"
         class="fixed inset-0 bg-orange "
         :class="
           toggle
@@ -59,7 +64,10 @@
         </div>
       </div>
 
-      <ul class="md:flex flex-1 justify-between text-gray hidden">
+      <ul
+        class="md:flex flex-1 justify-between text-gray hidden"
+        v-if="!palestine"
+      >
         <li>
           <a @click="change('#banner')" class="hover:text-white" href="#banner"
             >Home</a
@@ -101,18 +109,22 @@ import { mapState } from "vuex";
 export default {
   name: "Navbar",
   computed: {
-    ...mapState(["currentRoute"])
+    ...mapState(["currentRoute"]),
   },
   data() {
     return {
-      toggle: false
+      toggle: false,
+      palestine: false,
     };
+  },
+  mounted() {
+    this.palestine = this.$router.currentRoute.name === "Free Palestine";
   },
   methods: {
     change(data) {
       this.$store.commit("changeRoute", data);
-    }
-  }
+    },
+  },
 };
 </script>
 

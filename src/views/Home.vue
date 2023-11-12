@@ -29,7 +29,10 @@ export default {
     About,
     Portofolio,
     Engage,
-    Footer
-  }
+    Footer,
+  },
+  mounted() {
+    document.title = "Sammthing - UI/UX Designer And Developer";
+  },
 };
 </script>
